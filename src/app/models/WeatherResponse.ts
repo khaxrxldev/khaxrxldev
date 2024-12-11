@@ -7,6 +7,7 @@ export interface WeatherResponse {
   location?: string,
   state?: string,
   background?: string,
+  zone_code?: string,
   prayer_time$?: Observable<PrayerTime>,
   generationtime_ms?: number,
   utc_offset_seconds?: number,

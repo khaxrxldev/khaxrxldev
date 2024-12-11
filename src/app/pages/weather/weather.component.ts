@@ -29,7 +29,7 @@ export class WeatherComponent implements OnInit {
       location: 'Kuchai',
       state: 'Kuala Lumpur',
       background: '',
-      zone: 'JHR01'
+      zone: 'WLY01'
     }, {
       lat: 3.05136,
       long: 101.62444,
@@ -61,7 +61,9 @@ export class WeatherComponent implements OnInit {
           data.location = coordinate.location;
           data.state = coordinate.state;
           data.background = coordinate.background;
+          data.zone_code = coordinate.zone;
           data.prayer_time$ = this.getPrayerTime(coordinate.zone);
+          
           return data;
         })
       ));

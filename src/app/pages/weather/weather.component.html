@@ -65,6 +65,8 @@
         </div>
       </div>
       <div class="card-section">
+        <div class="location-label">Code</div>
+        <div class="location-value">{{ weather.zone_code }}</div>
         <div *ngIf="weather.prayer_time$ | async as prayerTime">
           <div class="hourly-card-container">
             <div class="prayer-time-card">
