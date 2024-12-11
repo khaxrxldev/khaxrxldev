@@ -1,0 +1,141 @@
+.card-container {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.card {
+  display: inline-block;
+  width: 400px;
+  margin: 1px 2px;
+}
+.card-section:nth-child(1) {
+  padding: 10px;
+  border: 1px solid #000000;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-section:nth-child(2) {
+  padding: 20px 10px;
+  border: 1px solid #000000;
+  border-top: none;
+}
+.card-header {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 5.5em;
+  position: relative;
+  padding-bottom: 60px;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+}
+.center-icon {
+  position: absolute;
+  z-index: 1;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  margin-top: 10px;
+}
+.grid-three div {
+  text-align: center;
+  padding: 10px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.param-icon {
+  margin: 10px 0px;
+}
+.param-icon-text {
+  margin: 10px 0px;
+  margin-bottom: -8px;
+}
+.param-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  color: #808080;
+}
+.param-value {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #000000;
+}
+.location-label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  color: #808080;
+}
+.location-value {
+  font-family: 'Calistoga', serif;
+  font-size: 1.5em;
+  line-height: 110%;
+  margin: 10px 0px 20px 0px;
+}
+.grid-five {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.grid-five div {
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  color: #808080;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.grid-five div:nth-child(1) {
+  border-top: 1px solid #d3d3d3;
+}
+.grid-five div:nth-child(2) {
+  border-top: 1px solid #d3d3d3;
+  border-left: 1px solid #d3d3d3;
+}
+.grid-five div:nth-child(3) {
+  border-top: 1px solid #d3d3d3;
+}
+.hourly-card-container {
+  white-space: nowrap;
+  overflow-x: auto;
+  margin: 20px 0px;
+}
+.hourly-card {
+  display: inline-block;
+  text-align: center;
+  padding: 30px 10px;
+  margin: 0px 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.hourly-card-icon {
+  margin: 10px 0px;
+}
+.hourly-label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  color: #808080;
+}
+.hourly-value {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #000000;
+}
+@media only screen and (max-width: 600px) {
+  .card-container {
+      white-space: nowrap;
+      overflow-x: auto;
+  }
+  .card {
+      display: inline-block;
+      width: 100%;
+      margin: 0px;
+  }
+}

@@ -1,0 +1,33 @@
+<div class="card-container">
+  <div class="card">
+    <div class='card-section' *ngIf="prayerTime$ | async as time">
+      <div style="overflow-y: scroll;">
+        <div (click)="setZoneCode('WLY01')">WLY01</div>
+        <div (click)="setZoneCode('SGR01')">SGR01</div>
+      </div>
+      <div>
+        <label>
+          <div class="param-value">{{ (time?.fajr ?? 0 ) * 1000 | date:'hh:mm a' }}</div>
+          <div class="param-text">Fajr</div>
+        </label>
+        <label>
+          <div class="param-value">{{ (time?.dhuhr ?? 0 ) * 1000 | date:'hh:mm a' }}</div>
+          <div class="param-text">Dhuhr</div>
+        </label>
+        <label>
+          <div class="param-value">{{ (time?.asr ?? 0 ) * 1000 | date:'hh:mm a' }}</div>
+          <div class="param-text">Asr</div>
+        </label>
+        <label>
+          <div class="param-value">{{ (time?.maghrib ?? 0 ) * 1000 | date:'hh:mm a' }}</div>
+          <div class="param-text">Maghrib</div>
+        </label>
+        <label>
+          <div class="param-value">{{ (time?.isha ?? 0 ) * 1000 | date:'hh:mm a' }}</div>
+          <div class="param-text">Isha'a</div>
+        </label>
+    </div>
+    </div>
+  </div>
+
+</div>
