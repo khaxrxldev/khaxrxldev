@@ -130,12 +130,24 @@
 }
 @media only screen and (max-width: 600px) {
   .card-container {
-      white-space: nowrap;
-      overflow-x: auto;
+    white-space: nowrap;
+    overflow-x: auto;
   }
   .card {
-      display: inline-block;
-      width: 100%;
-      margin: 0px;
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+  }
+  .card-section:nth-child(1) {
+    border-left: none;
+  }
+  .card-section:nth-child(2) {
+    border-left: none;
+  }
+  .card-container .card:first-of-type .card-section:nth-child(1) {
+    border-left: 1px solid #000000;
+  }
+  .card-container .card:first-of-type .card-section:nth-child(2) {
+    border-left: 1px solid #000000;
   }
 }

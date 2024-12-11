@@ -9,7 +9,8 @@ import { PrayerTimeService } from 'src/app/services/prayer-time.service';
   styleUrls: ['./prayer-time.component.css']
 })
 export class PrayerTimeComponent {
-  zoneCode: string = "WLY01";
+  zoneCode: string = 'WLY01';
+  zoneCodeList: string[] = ['SGR01', 'SGR02', 'SGR03', 'WLY01'];
   prayerTime$!: Observable<PrayerTime>;
 
   constructor(private prayerTimeService: PrayerTimeService) {}

@@ -2,8 +2,7 @@
   <div class="card">
     <div class='card-section' *ngIf="prayerTime$ | async as time">
       <div style="overflow-y: scroll;">
-        <div (click)="setZoneCode('WLY01')">WLY01</div>
-        <div (click)="setZoneCode('SGR01')">SGR01</div>
+        <div class="zone-select" *ngFor="let code of zoneCodeList" [ngClass]="{'active': zoneCode === code}" (click)="setZoneCode(code)">{{ code }}</div>
       </div>
       <div>
         <label>

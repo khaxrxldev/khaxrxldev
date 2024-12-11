@@ -5,7 +5,7 @@
 .card {
   display: inline-block;
   width: 400px;
-  margin: 1px 2px;
+  margin: 4px 2px;
 }
 .card-section {
   border: 1px solid #000000;
@@ -54,14 +54,30 @@ label:first-child {
 label:last-child {
   margin-right: 4px;
 }
+.zone-select {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #000000;
+  font-size: 0.8em;
+  padding: 5px 0px;
+  margin: 4px;
+}
+.zone-select:hover {
+  cursor: pointer;
+}
+.active {
+  background-color: #d3d3d3;
+}
 @media only screen and (max-width: 600px) {
   .card-container {
-      white-space: nowrap;
-      overflow-x: auto;
+    white-space: nowrap;
+    overflow-x: auto;
   }
   .card {
-      display: inline-block;
-      width: 100%;
-      margin: 1px 0px;
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+  }
+  .card-section {
+    border-bottom: none;
   }
 }
