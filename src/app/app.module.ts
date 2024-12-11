@@ -6,16 +6,12 @@ import { AppComponent } from './app.component';
 import { WeatherComponent } from './pages/weather/weather.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BlankComponent } from './pages/blank/blank.component';
-import { MainPageComponent } from './pages/main-page/main-page.component';
-import { PrayerTimeComponent } from './pages/prayer-time/prayer-time.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
-    BlankComponent,
-    MainPageComponent,
-    PrayerTimeComponent
+    BlankComponent
   ],
   imports: [
     BrowserModule,

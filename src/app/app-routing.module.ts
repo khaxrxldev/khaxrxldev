@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BlankComponent } from './pages/blank/blank.component';
-import { MainPageComponent } from './pages/main-page/main-page.component';
 import { DatePipe } from '@angular/common';
+import { WeatherComponent } from './pages/weather/weather.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MainPageComponent
+    component: WeatherComponent
   }, {
     path: 'blank',
     component: BlankComponent

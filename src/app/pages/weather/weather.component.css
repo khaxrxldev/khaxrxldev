@@ -18,6 +18,11 @@
   border: 1px solid #000000;
   border-top: none;
 }
+.card-section:nth-child(3) {
+  padding: 20px 10px;
+  border: 1px solid #000000;
+  border-top: none;
+}
 .card-header {
   font-family: 'Inter Tight', sans-serif;
   font-size: 5.5em;
@@ -128,6 +133,25 @@
   font-weight: 500;
   color: #000000;
 }
+.prayer-time-card {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  margin: 0px 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.prayer-time-label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  color: #808080;
+  margin-bottom: 5px;
+}
+.prayer-time-value {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #000000;
+}
 @media only screen and (max-width: 600px) {
   .card-container {
     white-space: nowrap;
@@ -144,10 +168,16 @@
   .card-section:nth-child(2) {
     border-left: none;
   }
+  .card-section:nth-child(3) {
+    border-left: none;
+  }
   .card-container .card:first-of-type .card-section:nth-child(1) {
     border-left: 1px solid #000000;
   }
   .card-container .card:first-of-type .card-section:nth-child(2) {
+    border-left: 1px solid #000000;
+  }
+  .card-container .card:first-of-type .card-section:nth-child(3) {
     border-left: 1px solid #000000;
   }
 }

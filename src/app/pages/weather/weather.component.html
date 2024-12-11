@@ -64,6 +64,32 @@
           </ng-container>
         </div>
       </div>
+      <div class="card-section">
+        <div *ngIf="weather.prayer_time$ | async as prayerTime">
+          <div class="hourly-card-container">
+            <div class="prayer-time-card">
+              <div class="prayer-time-label">Fajr</div>
+              <div class="prayer-time-value">{{ (prayerTime?.fajr ?? 0 ) * 1000 | date:'hh : mm a' }}</div>
+            </div>
+            <div class="prayer-time-card">
+              <div class="prayer-time-label">Dhuhr</div>
+              <div class="prayer-time-value">{{ (prayerTime?.dhuhr ?? 0 ) * 1000 | date:'hh : mm a' }}</div>
+            </div>
+            <div class="prayer-time-card">
+              <div class="prayer-time-label">Asr</div>
+              <div class="prayer-time-value">{{ (prayerTime?.asr ?? 0 ) * 1000 | date:'hh : mm a' }}</div>
+            </div>
+            <div class="prayer-time-card">
+              <div class="prayer-time-label">Maghrib</div>
+              <div class="prayer-time-value">{{ (prayerTime?.maghrib ?? 0 ) * 1000 | date:'hh : mm a' }}</div>
+            </div>
+            <div class="prayer-time-card">
+              <div class="prayer-time-label">Isha'a</div>
+              <div class="prayer-time-value">{{ (prayerTime?.isha ?? 0 ) * 1000 | date:'hh : mm a' }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </ng-container>
 </div>

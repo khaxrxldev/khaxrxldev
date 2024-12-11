@@ -1,9 +1,13 @@
+import { Observable } from "rxjs"
+import { PrayerTime } from "./PrayerTime"
+
 export interface WeatherResponse {
   latitude?: number,
   longitude?: number,
   location?: string,
   state?: string,
   background?: string,
+  prayer_time$?: Observable<PrayerTime>,
   generationtime_ms?: number,
   utc_offset_seconds?: number,
   timezone?: string,
